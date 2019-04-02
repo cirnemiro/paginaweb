@@ -1,0 +1,53 @@
+nav li:hover div{
+	width: 80%;
+	background-color: #606060;
+	text-decoration: none;
+}
+nav li a{
+	text-decoration: none;
+	color: #606060;
+
+}
+h1{
+	margin-top: 2vh;
+	font-size: calc(12px + 4vw);
+}
+main div:first-of-type{
+	display: flex;
+	flex-wrap: wrap-reverse;
+	justify-content: center;
+	margin-bottom: 4vh;
+}
+main div:first-of-type figure{
+	flex: 1;
+	padding: 2vw;
+}
+main div:first-of-type figure img{
+	width: 100%;
+	min-width: 500px;
+	border-radius: 10px;
+}
+main div:first-of-type div{
+	flex: 1;
+	min-width: 500px;
+	align-self: center;
+	margin-top: 4vh;
+	
+}
+main div:first-of-type div ul,
+main div:first-of-type div ul li{
+	display: inline-block;
+}
+main div:first-of-type div ul li{
+	font-size: calc(12px + 2vw);
+	margin-left: 2vw;
+	width: 100%;
+	margin-bottom: 2vh;
+}
+h2{
+	font-size: calc(10px + 1vw);
+	margin-bottom: 2vh;
+}
+article{
+	margin-bottom: 5vh;
+}

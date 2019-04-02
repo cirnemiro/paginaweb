@@ -1,0 +1,348 @@
+/*BODY*/
+
+body{
+	background-image:url(img/portadafinalcortada.jpg);
+	background-size: 100%;
+	bottom: 20px;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	position: relative;
+	
+}
+
+/*HEADER*/
+header{
+	height: 52vw;
+}
+nav li:hover div{
+	width: 80%;
+	background-color: #fff;
+}
+nav li a{
+	text-decoration: none;
+	color: #fff;
+
+}
+
+
+
+
+/*MAIN*/
+main{
+	
+	background-color:#fff; 
+	text-align: center;
+	padding: 0;
+	height: 3000px;
+	overflow: hidden;
+	outline: 5vw solid #fff;
+}
+main>h2{
+	margin-top: 1vh;
+	margin-bottom: 1vh;
+	color: #606060;
+}
+main>figure{
+	margin-top: 3vh;
+	border-bottom: 1px solid #606060;
+	padding-bottom: 3vh;
+}
+
+main figure li{
+	display: inline-block;
+	width: 4vw;
+	margin-right: 1vw;
+	margin-left: 1vw;
+	max-width: 100px;
+}
+main ul img{
+	width: 100%;
+}
+main h2+p+p+p+figure+div{
+	display: grid;
+	grid-template-columns: 25% 50% auto;
+	grid-template-areas: 
+		'b a d'
+		'b a e'
+		'c a f'
+		'c a g';
+	margin-top: 4vh;
+}
+
+/*ARTICLE1*/
+main div article:first-of-type{
+	grid-area: a;
+	text-align: left;
+	padding:0 1.5vw 1vh 1.5vw;
+}
+main div article:first-of-type figure{
+	position: relative;
+	height: 30vw;
+	
+	
+}
+main div article:first-of-type img{
+	position: absolute;
+	width: 100%;
+	border-radius: 10px;
+
+}
+main div article:first-of-type figure:hover img{
+	transform: scale(1.05);
+	transition: 1s;
+	border-radius: 20px;
+	
+}
+
+
+
+/*ARTICLE2 JAPON*/
+main div article:nth-of-type(2){
+	grid-area: b;
+	padding:0 1.5vw 1vh 1.5vw; 
+	text-align: left;
+	position: relative;
+}
+main div article:nth-of-type(2) img{
+	width: 100%;
+	border-radius: 10px;	
+}
+main div article:nth-of-type(2) figure:hover img{
+	transform: scale(1.05);
+	
+	transition: 1s;
+	border-radius: 20px;
+	
+}
+main div article:nth-of-type(2) div{
+	
+}
+#japonVisible{
+	opacity: 0;
+	position: absolute;
+	top: 2vw;
+	left: 6.5vw;
+	font-size: calc(5px + 3vw);
+	color: #fff;
+	
+}
+
+
+
+
+/*ARTICLE3 HAWAII*/
+main div article:nth-of-type(3){
+	grid-area: c;
+	padding:0 1.5vw 1vh 1.5vw;
+	text-align: left;
+	position: relative;
+}
+main div article:nth-of-type(3) img{
+	width: 100%;
+	border-radius: 10px;	
+}
+main div article:nth-of-type(3) figure:hover{
+	transform: scale(1.05);
+	transition: 1s;
+	border-radius: 20px;
+	
+}
+#hawaiVisible{
+	opacity: 0;
+	position: absolute;
+	top: 2vw;
+	left: 4.5vw;
+	font-size: calc(5px + 3vw);
+	color: #fff;
+
+}
+
+
+
+/*ARTICLE4*/
+main div article:nth-of-type(4){
+	grid-area: d;
+	text-align: left;
+	padding:0 1.5vw 1vh 1.5vw;
+}
+
+
+/*ARTICLE5*/
+main div article:nth-of-type(5){
+	grid-area: e;
+	text-align: left;
+	padding:0 1.5vw 1vh 1.5vw;
+}
+
+
+/*ARTICLE6*/
+main div article:nth-of-type(6){
+	grid-area: f;
+	text-align: left;
+	padding:0 1.5vw 1vh 1.5vw;
+}
+
+
+/*ARTICLE7*/
+main div article:last-of-type{
+	grid-area: g;
+	text-align: left;
+	padding:0 1.5vw 1vh 1.5vw;
+}
+
+/*ANIMACION IMAGENES*/
+#mainS{
+	display: flex;
+	align-items: center;
+	margin-top: 4vw;
+}
+#mainS div:nth-of-type(1){
+	flex: 1;
+	cursor: pointer;
+}
+#mainS div:nth-of-type(2){
+	flex:  2;
+	cursor: pointer;
+}
+#mainS div:nth-of-type(3){
+	flex: 4;
+	cursor: pointer;
+}
+#mainS div:nth-of-type(4){
+	flex: 2;
+	cursor: pointer;
+}
+#mainS div:nth-of-type(5){
+	flex: 1;
+	cursor: pointer;
+}
+#mainS div img{
+	width: 70%;
+	border-radius: 10px;
+	
+}
+#mainS figure{
+	width:5%;
+	height: 500px;
+	position: relative;
+}
+#mainS div img:hover{
+	width: 90%;
+}
+
+#mainS figure:first-of-type img{
+	height: 100%;
+	vertical-align: middle;
+	width: 80%;
+	opacity: 0.6;
+	cursor: pointer;
+}
+#mainS figure:last-of-type img{
+	height: 100%;
+	vertical-align: middle;
+	transform: rotate(180deg);
+	width: 80%;
+	opacity: 0.6;
+	cursor: pointer;
+}
+
+.pantallacompleta{
+	padding: 1%;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(120,120,120,0.9);
+	z-index: 6;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	align-content: flex-start;
+
+}
+.flechaPC{
+	flex: 1;
+	text-align: center;
+
+}
+.flechaPC img{
+	width: 10%;
+	cursor: pointer;
+}
+
+.rotate180deg{
+	transform: rotate(180deg);
+}
+.flechasEscala{
+	width: 50%;
+	background-image: url(img/backgroundFlechas.jpg);
+	padding: 0 2vw;
+	max-width: 75px;
+	border-radius: 20px;
+	opacity: 0.7;
+	
+}
+.pantallacompleta figure:nth-of-type(2){
+	flex: 2;
+	text-align: center;
+	position: relative;
+}
+.pantallacompleta figure:nth-of-type(2) img{
+	width: 76%;
+	border-radius: 5px;
+}
+.pantallacompleta span{
+	position: absolute;
+	font-size: calc(10px + 1vw);
+	border-radius: 10px;
+	color:rgba(255,255,255,0.95);
+	text-shadow: 0 0 5px rgba(0,0,0,0.8);
+
+}
+.pantallacompleta span:nth-of-type(1){
+	top: 1vh;
+	left: 10vw;	
+}
+.pantallacompleta span:nth-of-type(2){
+	top: 1vh;
+	right: 10vw;
+}
+
+
+
+
+
+
+
+
+
+/*MEDIAQUERIS adaptado a 1000px*/
+@media only screen and (max-width: 1000px){
+	main h2+p+p+p+figure+div{
+		 
+		grid-template-columns:50% auto;
+		grid-template-areas: 
+			'a a'
+			'a a'
+			'b c'
+			'd d'
+			'e e'
+			'f f'
+			'g g';
+	}
+	main div article:nth-of-type(1){
+		margin-bottom: 10vh;
+	}
+	/*galeria de imagenes adaptada a mobil*/
+	.pantallacompleta figure:nth-of-type(2){
+		flex: 7;
+		text-align: center;
+	}
+	.pantallacompleta figure:nth-of-type(2) img{
+		width: 100%;
+	}
+}
+
+
+

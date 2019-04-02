@@ -1,0 +1,57 @@
+nav li:hover div{
+	width: 80%;
+	background-color: #606060;
+	text-decoration: none;
+}
+nav li a{
+	text-decoration: none;
+	color: #606060;
+
+}
+main div:first-of-type{
+	text-align: right;
+}
+main div:nth-of-type(2){
+	display: grid;
+	grid-template-columns: 30% 30% 30%;
+	grid-gap: 10vh;
+
+}
+img{
+	widows: 100%;
+	border-radius: 20px;r
+}
+@media only screen and (max-width: 1000px){
+	main div:nth-of-type(2){
+		display: initial;
+}
+/*main div:nth-of-type(2) article:first-of-type{
+	grid-area: a;
+	display: none;
+}
+main div:nth-of-type(2) article:nth-of-type(2){
+	grid-area: b;
+}
+main div:nth-of-type(2) article:nth-of-type(3){
+	grid-area: c;	
+}
+main div:nth-of-type(2) article:nth-of-type(4){
+	grid-area: 	d;
+}
+main div:nth-of-type(2) article:nth-of-type(5){
+	grid-area: 	e;
+}
+main div:nth-of-type(2) article:nth-of-type(6){
+	grid-area: 	f;
+}
+main div:nth-of-type(2) article:nth-of-type(7){
+	grid-area: 	g;
+}
+main div:nth-of-type(2) article:nth-of-type(8){
+	grid-area: 	h;
+}
+main div:nth-of-type(2) article:nth-of-type(9){
+	grid-area: 	i;
+}
+
+Estamierda no funciona */

@@ -1,0 +1,124 @@
+/*MAIN*/
+main{
+	width: 65%;
+	margin: auto;
+	margin-top: 5vh;
+}
+main article{
+	margin-top: 3vh;
+
+}
+nav li:hover div{
+	width: 80%;
+	background-color: #606060;
+	text-decoration: none;
+}
+nav li a{
+	text-decoration: none;
+	color: #606060;
+
+}
+
+img{
+	border-radius: 15px;
+	height: 100%;
+}
+
+main article:first-of-type{
+	position: relative;
+	overflow: hidden;
+}
+main article:first-of-type h2{
+	position: absolute;
+	right: 39%;
+	top: 20%;
+	font-size: calc(12px + 3vw);
+	color: #fff;
+	opacity: 0;
+	transition: 1s;
+}
+
+
+main article:nth-of-type(2){
+	position: relative;
+	overflow: hidden;
+}
+main article:nth-of-type(2) h2{
+	position: absolute;
+	right: 43%;
+	top: 20%;
+	font-size: calc(12px + 3vw);
+	color: #fff;
+	opacity: 0;
+	transition: 1s;
+}
+
+
+main article:nth-of-type(3){
+	position: relative;	
+	overflow: hidden;
+}
+main article:nth-of-type(3) h2{
+	position: absolute;
+	right: 42%;
+	top: 20%;
+	font-size: calc(12px + 3vw);
+	color: #fff;
+	opacity: 0;
+	transition: 1s;
+}
+main article div{
+	
+	position: absolute;
+	bottom: -60%;
+	padding: 2vw 0 2vw 10%;
+	background-color: rgba(157,254,255,0.7);
+	width: 90%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+	overflow: hidden;
+	
+
+
+
+}
+.hover{
+	animation: transicion 2s;
+	animation-play-state: running;
+	animation-fill-mode: both;
+}
+.unhover{
+	animation: ocultar 2s;
+	animation-play-state: running;
+	animation-fill-mode: both;
+}
+main article li{
+	margin-bottom: 1vw;
+	color: #fff;
+	list-style-type: none;
+	font-size: calc(8px + 1vw);
+}
+@keyframes transicion{
+	from{bottom: -60%;}
+	to{bottom: 0;}
+}
+@keyframes ocultar{
+	from{bottom: 0;}
+	to{bottom: -60%;}
+}
+figure{
+	overflow: hidden;
+}
+main article:hover div{
+	animation-play-state: running;
+
+}
+main article div a{
+	color: #fff;
+	text-shadow: 2px 1px 4px #001932;
+}
+main article div a:hover{
+	border-bottom:4px #1A62F6 dotted;
+}
